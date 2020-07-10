@@ -106,14 +106,14 @@ kind: Pipeline
 metadata:
   project: my-awesome-project
   name: goapp-latest
-****spec:
-	repository: jcr
+spec:
+  repository: jcr
   image: mygoapp
   tag: latest
   builder: 
-		name: my-go-app-builder
-		params:
-			Dockerfile: golang
+    name: my-go-app-builder
+    params:
+      Dockerfile: golang
   code:
     git: 
       repoAccount: github
